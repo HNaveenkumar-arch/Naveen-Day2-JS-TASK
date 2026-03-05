@@ -146,18 +146,19 @@ console.log((5 > 2 && 3 > 1) || (10 < 2));   //Result is = true
 console.log(`Section-6 - Ternary`);
 
 let age = 20;
-(age >= 18 && console.log("Adult")) || console.log("Minor");
+console.log(age >= 18 ? "Adult" : "Minor");
+
 let marks = 65;
-(marks >= 50 && console.log("Pass")) || console.log("Fail");
+console.log(marks >= 50 ? "Pass" : "Fail");
+
 let num = 7;
-(num % 2 === 0 && console.log("Even")) || console.log("Odd");
-let marks1 = 60;
-(marks1 >= 90 && console.log("A")) ||
-(marks1 >= 75 && console.log("B")) ||
-(marks1 >= 50 && console.log("C")) ||
-console.log("Fail");
+console.log(num % 2 == 0 ? "Even" : "Odd");
+
+let grade = marks >= 90 ? "A" : marks >= 75 ? "B" : marks >= 50 ? "C" : "Fail";
+console.log(grade);
+
 let number = -5;
-(number >= 0 && console.log("Positive")) || console.log("Negative");
+console.log(number >= 0 ? "Positive" : "Negative");
 
 console.log(`Section-7 - String & Concatenation`);
 console.log("Hello" + "World");
